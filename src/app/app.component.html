@@ -1,26 +1,3 @@
-<div>
-    The name of this Tutorial is {{TutorialName}}<br>
-    <div *ngFor = 'let lst of appList'>
-        <p>The Topic is {{lst | slice: 1 : 3}}<br></p>
-    </div>
- </div>
- <div>
-    <input [value] = "name" (input) = "name = $event.target.value">
-    {{name}}
- </div>
- <div>
-     {{Status}}
-     <button (click) = "clicked()">Click</button>
- </div>
- <div> 
-    The date of this Tutorial is {{newdate | date:"MM-dd-yy"}}<br>  
- </div>
- <div> 
-    The currency of this Tutorial is {{newValue | currency}}<br>      
- </div>
- <div> 
-    The currency of this Tutorial is {{newValue | percent}}<br>      
- </div>
- <div> 
-    The percentage is {{newValue | percent:'2.2-5'}}<br>  
- </div>
+<h1>
+  {{title}}
+</h1>
